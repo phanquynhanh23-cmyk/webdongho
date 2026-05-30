@@ -1,0 +1,317 @@
+/* ==========================================================================
+   1. CẤU HÌNH CHUNG & RESET MẶC ĐỊNH
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Màu đen xám, dịu mắt không bị chói */
+    color: #e0e0e0;           /* Chữ màu trắng xám nhẹ */
+}
+
+/* ==========================================================================
+   2. HEADER & THANH ĐIỀU HƯỚNG (MENU)
+   ========================================================================== */
+header {
+    background-color: #080808 !important; /* Đen tuyền cực sang */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* MENU DROPDOWN (LAB THỰC HÀNH) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: white;
+    min-width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* GIỎ HÀNG (CART) */
+.cart {
+    color: white;
+    font-size: 25px;
+    position: relative;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* ==========================================================================
+   3. BANNER & KHU VỰC SIÊU SALE
+   ========================================================================== */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner-nu.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 10px rgba(255, 77, 148, 0.3);
+}
+
+/* ==========================================================================
+   4. CẤU TRÚC LƯỚI & CARD SẢN PHẨM (PRODUCTS)
+   ========================================================================== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Chia cột tự động đều tăm tắp */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Khung bọc từng sản phẩm */
+.card {
+    background-color: #1e1e1e; /* Nền card màu xám tối */
+    border: 1px solid #2d2d2d; /* Viền mờ phân cách */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hiệu ứng khi RE CHUỘT vào Card */
+.card:hover {
+    transform: translateY(-8px); 
+    background-color: #252525; /* Sáng lên một chút */
+    border-color: #ff4d94;     /* Viền đổi sang màu hồng nổi bật */
+    box-shadow: 0 15px 30px rgba(255, 77, 148, 0.15); /* Đổ bóng phát sáng mờ */
+}
+
+/* Khống chế kích thước ảnh đồng hồ đứng vuông vắn */
+.card img {
+    width: 100%;
+    height: 280px;         /* Ép chiều cao cố định tránh ảnh to đè chữ */
+    object-fit: cover;     /* Giữ tỷ lệ ảnh, tự động cắt viền thừa không lo dẹt */
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Phóng to nhẹ hình ảnh khi hover card */
+}
+
+.card h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Màu giá tiền nổi bật */
+.card .price {
+    color: #ff66a3; /* Hồng sáng */
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Nút bấm Thêm vào giỏ hàng */
+.card button {
+    background-color: #ff4d94; /* Màu hồng nổi bật */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ffffff; 
+    color: #ff4d94;
+    box-shadow: 0 0 15px rgba(255, 77, 148, 0.4);
+}
+
+/* ==========================================================================
+   5. BỔ SUNG: HIỆU ỨNG ẤN VÔ HIỆN THÔNG SỐ (ACCORDION TOGGLE)
+   ========================================================================== */
+
+/* Nút bấm mở rộng (Mũi tên) */
+.toggle-specs-btn {
+    background: #252525;
+    color: #ff66a3;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Đẩy chữ sang trái, mũi tên sang phải */
+    align-items: center;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.toggle-specs-btn:hover {
+    background: #333;
+    border-color: #ff4d94;
+}
+
+/* Icon mũi tên mặc định hướng xuống */
+.toggle-specs-btn i {
+    transition: transform 0.3s ease;
+}
+
+/* Khối thông số chi tiết (Mặc định ẩn kín đi) */
+.product-specs-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    transition: max-height 0.3s ease-out; /* Tạo chuyển động mượt khi xổ xuống */
+}
+
+/* Trạng thái KÍCH HOẠT khi ấn mở (Được JS thêm class .active) */
+.product-specs-dropdown.active {
+    max-height: 250px; /* Cho phép mở rộng chiều cao tối đa */
+    margin-top: 12px;
+    border-top: 1px dashed #3a3a3a; /* Đường kẻ mờ ngăn cách */
+    padding-top: 12px;
+}
+
+/* Xoay ngược mũi tên lên trên khi đang hiển thị */
+.toggle-specs-btn.active i {
+    transform: rotate(180deg);
+    color: #ff4d94;
+}
+
+/* Định dạng danh sách thông số bên trong */
+.product-specs-dropdown .desc {
+    color: #b3b3b3;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.product-specs-dropdown ul {
+    list-style: none;
+}
+
+.product-specs-dropdown ul li {
+    color: #e0e0e0;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.product-specs-dropdown ul li i {
+    color: #ff4d94;
+    font-size: 9px;
+    margin-right: 8px;
+}
+
+.product-specs-dropdown ul li span {
+    font-weight: 600;
+    color: #ff66a3;
+    margin-right: 5px;
+}
+
+/* Nhãn New / Sale (Nếu có dùng) */
+.badge-sale {
+    background: #ff4d94;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(255, 77, 148, 0.5);
+}
+
+/* ==========================================================================
+   6. FOOTER (CHÂN TRANG)
+   ========================================================================== */
+footer {
+    background-color: #080808 !important;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #1e1e1e;
+}
+
+footer h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}

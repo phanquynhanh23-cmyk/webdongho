@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Nam - Hzanh🥀</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-clock"></i>
+            Hzanh🥀
+        </div>
+
+        <nav>
+            <a href="index.html">Trang Chủ</a>
+            <a href="nam.html" style="color: gold; font-weight: bold;">Nam</a>
+            <a href="nu.html">Nữ</a>
+            <a href="#">Liên Hệ</a>
+
+            <div class="dropdown">
+                <a href="#">Lab Thực Hành ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Lab 1</a>
+                    <a href="#">Lab 2</a>
+                    <a href="#">Lab 3</a>
+                    <a href="#">Lab 4</a>
+                    <a href="#">Lab 5</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner-nam.jpg') !important;">
+        <div class="banner-content">
+            <h1>ĐỒNG HỒ NAM LỊCH LÃM</h1>
+            <p>Bản lĩnh đàn ông - Khẳng định đẳng cấp phái mạnh</p>
+            <button id="buy-now">Khám Phá Ngay</button>
+        </div>
+    </section>
+
+    <section class="sale" style="text-align: center; margin-top: 40px;">
+        <h2>BỘ SƯU TẬP ĐỒNG HỒ NAM 2026</h2>
+        <p>Tìm kiếm mẫu đồng hồ phù hợp với phong cách của bạn</p>
+    </section>
+
+    <section class="search-box" style="text-align: center; margin: 20px 0;">
+        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm nam..." style="padding: 10px; width: 300px; border-radius: 6px; border: 1px solid #333; background: #1e1e1e; color: #fff;">
+    </section>
+
+    <!-- Danh sách 10 sản phẩm đồng hồ nam với đầy đủ thông số cập nhật -->
+    <section class="products" style="padding: 20px;">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="images/rolex-nam.jpg" alt="Rolex Submariner">
+            <h3>Rolex Submariner</h3>
+            <p class="price">24.500.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Biểu tượng của sự mạnh mẽ, đẳng cấp và thể thao thượng lưu.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Automatic Thụy Sĩ (Calibre 3235)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 41 mm - Dày 12.3 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Sapphire nguyên khối chống lóa</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chất liệu:</span> Thép siêu bền Oystersteel 904L</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Tự động tích cót lên đến 70 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 30 ATM (Lặn sâu chuyên nghiệp)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="images/hublot-nam.jpg" alt="Hublot Classic Fusion">
+            <h3>Hublot Classic Fusion</h3>
+            <p class="price">18.900.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Sự hòa quyện hoàn hảo giữa nghệ thuật cổ điển và hiện đại.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> HUB1110 Automatic (21 chân kính)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 42 mm - Dày 10.4 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính Sapphire phủ lớp chống phản chiếu</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Dây đeo:</span> Cao su tự nhiên lót da cá sấu</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Năng lượng dự trữ đạt 42 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 5 ATM (Đi mưa, rửa tay nhẹ)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="images/casio-nam.jpg" alt="Casio Edifice">
+            <h3>Casio Edifice Sport</h3>
+            <p class="price">5.500.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Thiết kế góc cạnh thể thao lấy cảm hứng từ xe đua tốc độ.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Tough Solar (Pin năng lượng mặt trời)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 43.5 mm - Dày 11.8 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính khoáng cường lực (Mineral Crystal)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Tính năng:</span> Kết nối Bluetooth, bấm giờ thể thao</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Tuổi thọ pin:</span> 5 tháng sau khi sạc đầy (không tiếp xúc ánh sáng)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 10 ATM (Bơi lội, tắm thoải mái)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <img src="images/seiko-nam.jpg" alt="Seiko 5">
+            <h3>Seiko 5 Kiếm Sĩ</h3>
+            <p class="price">7.200.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Huyền thoại bền bỉ đến từ Nhật Bản, cá tính và bụi bặm.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Automatic Caliber 4R36 (24 chân kính)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 42.5 mm - Dày 13.4 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính Hardlex độc quyền chống va đập tốt</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Thiết kế:</span> Mặt đáy lộ cơ hoàn toàn, kim dạ quang siêu sáng</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Khả năng trữ cót khoảng 41 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 10 ATM (Tắm rửa và đi bơi)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card">
+            <img src="images/nam-4.jpg" alt="Orient Bambino">
+            <h3>Orient Bambino Open Heart</h3>
+            <p class="price">6.400.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Kính cong vòm thanh lịch kết hợp ô lộ cơ Open Heart tinh tế.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> In-house Automatic Nhật Bản (Cal.F6722)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 40.5 mm - Dày 12 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính khoáng tinh thể cong lồi cổ điển</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chất liệu:</span> Dây da vân cá sấu, vỏ thép mạ PVD</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Trữ năng lượng 40 giờ, có lên cót tay</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 3 ATM (Đi mưa lâm thâm, rửa tay)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card">
+            <img src="images/nam-5.jpg" alt="Tissot Le Locle">
+            <h3>Tissot Le Locle Powermatic</h3>
+            <p class="price">15.200.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Tuyệt tác mang đậm di sản cổ điển Thụy Sĩ với vân Guilloche nghệ thuật.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Powermatic 80.111 trứ danh</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 39.3 mm - Dày 9.8 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Tinh thể Sapphire chống trầy xước tuyệt đối</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chất liệu:</span> Thép không gỉ 316L đánh bóng sang trọng</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Khả năng trữ cót vượt trội lên đến 80 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 3 ATM (Tiêu chuẩn rửa tay, đi mưa thông thường)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card">
+            <img src="images/nam-6.jpg" alt="Citizen C7">
+            <h3>Citizen C7 Elegance</h3>
+            <p class="price">5.900.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Tái hiện dòng sản phẩm Crystal Seven huyền thoại năm 1965 cá tính.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Caliber 8200 Automatic (21 chân kính)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 40 mm - Dày 12.6 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính khoáng Mineral hình vòm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Thiết kế:</span> Ô lịch thứ độc đáo góc 12 giờ dưới dạng đa giác</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Thời gian trữ năng lượng cơ học khoảng 40 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 5 ATM (An tâm đi mưa lớn, tắm bồn)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card">
+            <img src="images/nam-7.jpg" alt="OP Nam">
+            <h3>OP Olympia Mechanical</h3>
+            <p class="price">4.800.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Đồng hồ cơ phân khúc tầm trung cực bền bỉ, cấu hình vượt tầm giá.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Seiko NH35A Automatic bền bỉ và chính xác</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 40 mm - Dày 11.5 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Sapphire chống xước hoàn hảo</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chất liệu:</span> Kính lúp ô lịch ngày, khóa thông minh chống hằn dây</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Tích cót tự động kết hợp cót tay 41 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 5 ATM (Đi mưa, tắm rửa sinh hoạt hàng ngày)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="card">
+            <img src="images/nam-8.jpg" alt="Longines HydroConquest">
+            <h3>Longines HydroConquest</h3>
+            <p class="price">32.000.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Dòng đồng hồ lặn cao cấp mạnh mẽ đến từ thương hiệu cánh chim phượng hoàng.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Automatic L888 đỉnh cao (Độc quyền Longines)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 41 mm - Dày 11.9 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Sapphire phủ chống lóa nhiều lớp mặt trong</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Vành Bezel:</span> Vòng xoay làm bằng gốm Ceramic chống trầy</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Thời gian trữ năng lượng cực cao lên đến 72 giờ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 30 ATM (Chịu áp suất nước cao, lặn biển thoải mái)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="card">
+            <img src="images/nam-9.jpg" alt="Hamilton Khaki">
+            <h3>Hamilton Khaki Field</h3>
+            <p class="price">13.800.000 VNĐ</p>
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="product-specs-dropdown">
+                <p class="desc">Phong cách phi công quân đội bụi bặm, bền bỉ và đậm chất nam tính phượt thủ.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> H-10 Automatic Thụy Sĩ vô cùng bền bỉ</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> Thân mặt 38 mm - Dày 9.5 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt kính:</span> Kính Sapphire nguyên khối dạng phẳng</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Dây đeo:</span> Vải Canvas dù quân đội lót da cao cấp</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Trữ cót:</span> Khả năng trữ năng lượng duy trì đến 80 giờ liên tục</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 10 ATM (Phù hợp hoạt động ngoài trời, bơi lội)</li>
+                </ul>
+            </div>
+            <button>Thêm vào giỏ</button>
+        </div>
+
+    </section>
+
+</body>
+</html>

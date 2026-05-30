@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hzanh🥀</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-clock"></i>
+            Hzanh🥀
+        </div>
+
+        <nav>
+
+            <a href="index.html">Trang Chủ</a>
+               <a href="nam.html">Nam</a>
+            <a href="nu.html">Nữ</a>
+              <a href="lienhe.html">Liên Hệ</a>
+
+            <div class="dropdown">
+
+                <a href="#">
+                    Lab Thực Hành ▼
+                </a>
+
+                <div class="dropdown-content">
+
+                    <a href="#">Lab 1</a>
+                    <a href="#">Lab 2</a>
+                    <a href="#">Lab 3</a>
+                    <a href="#">Lab 4</a>
+                    <a href="#">Lab 5</a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cart-count">0</span>
+
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+        <div class="overlay"></div>
+
+        <div class="banner-content">
+
+            <h1>ĐỒNG HỒ CAO CẤP</h1>
+
+            <p>
+                Khẳng định phong cách và đẳng cấp của bạn
+            </p>
+
+            <button id="buy-now">
+                Mua Ngay
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="sale">
+
+        <h2>🔥 SIÊU SALE 50%</h2>
+
+        <p>
+            Giảm giá tất cả đồng hồ hôm nay
+        </p>
+
+    </section>
+
+    <section class="search-box">
+
+        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
+
+    </section>
+
+    <section class="products">
+
+        <div class="card">
+
+            <img src="images/rolex.jpg">
+
+            <h3>Rolex Nữ</h3>
+
+            <p class="price">12.500.000 VNĐ</p>
+
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="product-specs-dropdown">
+                <p class="desc">Thiết kế sang trọng nâng tầm đẳng cấp quý cô.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Automatic (Tự động)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> 28 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chất liệu:</span> Thép không gỉ 316L</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 5 ATM</li>
+                </ul>
+            </div>
+
+            <button>Thêm vào giỏ</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/citizen.jpg">
+
+            <h3>Citizen Nữ</h3>
+
+            <p class="price">8.900.000 VNĐ</p>
+
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="product-specs-dropdown">
+                <p class="desc">Vẻ đẹp thanh lịch, nhẹ nhàng và cuốn hút.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Eco-Drive (Năng lượng ánh sáng)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> 30 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kính:</span> Sapphire chống xước</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 3 ATM</li>
+                </ul>
+            </div>
+
+            <button>Thêm vào giỏ</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/casio.jpg">
+
+            <h3>Casio Sport</h3>
+
+            <p class="price">4.200.000 VNĐ</p>
+
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="product-specs-dropdown">
+                <p class="desc">Phong cách thể thao, năng động và bền bỉ.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Quartz (Pin điện tử)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> 42 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Tính năng:</span> Bấm giờ thể thao, Đèn LED</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 10 ATM (Bơi lội thoải mái)</li>
+                </ul>
+            </div>
+
+            <button>Thêm vào giỏ</button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/tissot.jpg">
+
+            <h3>Tissot Luxury</h3>
+
+            <p class="price">15.000.000 VNĐ</p>
+
+            <div class="toggle-specs-btn">
+                Thông số chi tiết <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="product-specs-dropdown">
+                <p class="desc">Đẳng cấp Thụy Sĩ cổ điển và tinh tế.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Bộ máy:</span> Powermatic 80 (Trữ cót 80 giờ)</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Kích thước:</span> 41 mm</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Mặt số:</span> Đính kim cương nhân tạo</li>
+                    <li><i class="fa-solid fa-circle-info"></i> <span>Chống nước:</span> 5 ATM</li>
+                </ul>
+            </div>
+
+            <button>Thêm vào giỏ</button>
+
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <div class="service-box">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <h3>Giao Hàng Nhanh</h3>
+
+            <p>Miễn phí giao hàng toàn quốc.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <i class="fa-solid fa-gem"></i>
+
+            <h3>Chính Hãng</h3>
+
+            <p>Bảo hành chính hãng 12 tháng.</p>
+
+        </div>
+
+        <div class="service-box">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>Hỗ Trợ 24/7</h3>
+
+            <p>Tư vấn khách hàng mọi lúc.</p>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <div class="about-text">
+
+            <h2>Giới Thiệu</h2>
+
+            <p>
+                Hzanh🥀 là website bán đồng hồ nam nữ cao cấp
+                với giao diện hiện đại và responsive.
+                Website được xây dựng bằng HTML, CSS và JavaScript.
+            </p>
+
+        </div>
+
+        <img src="images/about.jpg">
+
+    </section>
+
+    <section class="reviews">
+
+        <h2>Khách Hàng Đánh Giá</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <p>
+                    “Đồng hồ rất đẹp và sang.”
+                </p>
+
+                <h4>- Minh Anh</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <p>
+                    “Giao hàng nhanh và tư vấn nhiệt tình.”
+                </p>
+
+                <h4>- Trung Nguyên</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <p>
+                    “Sẽ tiếp tục ủng hộ shop.”
+                </p>
+
+                <h4>- Quỳnh Anh</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3>Hzanh🥀</h3>
+
+        <p>Email: Hzanh🥀@gmail.com</p>
+
+        <p>Hotline: 0862894999</p>
+
+        <p>© 2026 All Rights Reserved</p>
+
+    </footer>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+   <script src="scrip.js"></script>
+
+</body>
+
+</html>

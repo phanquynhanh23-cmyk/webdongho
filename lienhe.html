@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Hzanh🥀</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-clock"></i>
+            Hzanh🥀
+        </div>
+
+        <nav>
+             <a href="index.html">Trang Chủ</a>
+               <a href="nam.html">Nam</a>
+            <a href="nu.html">Nữ</a>
+              <a href="lienhe.html">Liên Hệ</a>
+            <div class="dropdown">
+                <a href="#">Lab Thực Hành ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Lab 1</a>
+                    <a href="#">Lab 2</a>
+                    <a href="#">Lab 3</a>
+                    <a href="#">Lab 4</a>
+                    <a href="#">Lab 5</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cart" style="cursor: pointer;" onclick="window.location.href='giohang.html'">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banner-lienhe.jpg'); min-height: 30vh; display: flex; align-items: center; justify-content: center;">
+        <div class="banner-content" style="text-align: center;">
+            <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+            <p>Hzanh🥀 luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7</p>
+        </div>
+    </section>
+
+    <section style="padding: 50px 20px; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; color: #fff;">
+        
+        <div style="flex: 1; min-width: 300px;">
+            <h2 style="color: gold; border-bottom: 2px solid gold; padding-bottom: 10px; margin-bottom: 20px;">THÔNG TIN CỬA HÀNG</h2>
+            <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: gold; margin-right: 10px;"></i> <strong>Địa chỉ:</strong> Krông Ana - Đắk Lắk </p>
+            <p style="margin-bottom: 15px;"><i class="fa-solid fa-phone" style="color: gold; margin-right: 10px;"></i> <strong>Hotline:</strong> 0862894999</p>
+            <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope" style="color: gold; margin-right: 10px;"></i> <strong>Email:</strong> Hzanh🥀@gmail.com</p>
+            <p style="margin-bottom: 15px;"><i class="fa-solid fa-user-shield" style="color: gold; margin-right: 10px;"></i> <strong>Chủ sở hữu:</strong> Phan Thị Quỳnh Anh</p>
+            <p style="margin-bottom: 15px;"><i class="fa-solid fa-clock" style="color: gold; margin-right: 10px;"></i> <strong>Giờ làm việc:</strong> 08:00 - 22:00 (Kể cả CN & Ngày lễ)</p>
+        </div>
+
+        <div style="flex: 1; min-width: 300px; background: #1a1a1a; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+            <h2 style="color: gold; margin-bottom: 20px;">GỬI THÔNG TIN GÓP Ý</h2>
+            <form id="contactForm" onsubmit="handleContact(event)">
+                <input type="text" placeholder="Họ và tên của bạn" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #444; background: #222; color: #fff;">
+                <input type="email" placeholder="Địa chỉ Gmail" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #444; background: #222; color: #fff;">
+                <input type="tel" placeholder="Số điện thoại" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #444; background: #222; color: #fff;">
+                <textarea placeholder="Nội dung cần liên hệ hoặc lời nhắn..." rows="5" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #444; background: #222; color: #fff; resize: none;"></textarea>
+                <button type="submit" style="width: 100%; padding: 12px; background: gold; color: #000; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase;">Gửi Liên Hệ</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Hzanh🥀</h3>
+        <p>Email: Hzanh🥀@gmail.com</p>
+        <p>Hotline: 0862894999</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <button id="topBtn">↑</button>
+
+    <script src="scrip.js"></script>
+    <script>
+        function handleContact(e) {
+            e.preventDefault();
+            alert("Cảm ơn bạn đã gửi liên hệ! Hệ thống Hzanh🥀 sẽ phản hồi lại bạn qua Gmail sớm nhất.");
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>

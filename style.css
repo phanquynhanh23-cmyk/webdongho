@@ -315,3 +315,137 @@ footer p {
     color: #888;
     margin-bottom: 5px;
 }
+/* Nút bấm thông số chi tiết */
+.toggle-specs-btn {
+    background: #252525;
+    color: #ff66a3;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.toggle-specs-btn:hover {
+    background: #333;
+    border-color: #ff4d94;
+}
+
+/* Biểu tượng mũi tên */
+.toggle-specs-btn i {
+    transition: transform 0.3s ease;
+}
+
+/* Khối thông số (Mặc định ẩn hoàn toàn) */
+.product-specs-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    transition: max-height 0.3s ease-out; /* Tạo hiệu ứng mượt khi mở rộng */
+}
+
+/* 🌟 KHI ĐƯỢC JS THÊM CLASS .active -> BUNG CHIỀU CAO ĐỂ HIỂN THỊ */
+.product-specs-dropdown.active {
+    max-height: 250px !important; /* Ép buộc mở rộng chiều cao tối đa */
+    margin-top: 12px;
+    border-top: 1px dashed #3a3a3a;
+    padding-top: 12px;
+}
+
+/* Xoay ngược mũi tên lên trên khi đang hiển thị */
+.toggle-specs-btn.active i {
+    transform: rotate(180deg);
+    color: #ff4d94;
+}
+
+/* Định dạng chữ danh sách bên trong */
+.product-specs-dropdown .desc {
+    color: #b3b3b3;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.product-specs-dropdown ul {
+    list-style: none;
+}
+
+.product-specs-dropdown ul li {
+    color: #e0e0e0;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.product-specs-dropdown ul li i {
+    color: #ff4d94;
+    font-size: 9px;
+    margin-right: 8px;
+}
+
+.product-specs-dropdown ul li span {
+    font-weight: 600;
+    color: #ff66a3;
+    margin-right: 5px;
+}
+/* 1. Hiển thị thông số trong trang sản phẩm */
+.product-specs-dropdown {
+    display: none;
+    background: #222;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.product-specs-dropdown.active {
+    display: block;
+}
+/* 2. Định dạng danh sách thông số cho đẹp */
+.product-specs-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs-dropdown li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* 3. Đảm bảo mô tả không bị ẩn */
+.desc {
+    display: block !important;
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+/* Ẩn nội dung mặc định */
+.product-specs-dropdown {
+    display: none; 
+    padding: 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+/* Class này dùng để mở thông số */
+.product-specs-dropdown.active {
+    display: block;
+}
+
+/* Định dạng nút bấm đóng mở */
+.toggle-btn {
+    cursor: pointer;
+    background: #333;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
